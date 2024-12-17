@@ -1,0 +1,175 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  background: #000;
+  color: white;
+  line-height: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+  width: 900px;
+  margin: auto;
+  margin: 15px auto;
+}
+
+.grid-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.grid-tiles img {
+  width: 100%;
+}
+
+.header {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: auto;
+  margin-top: 30px;
+}
+.header .profile {
+  height: 200px;
+}
+.header .info table {
+  height: 100%;
+  width: 430px;
+  line-height: 1.3rem;
+}
+.header .info table tr:nth-child(1) {
+  height: 30px;
+}
+.header .info table tr:nth-child(2) {
+  height: 60px;
+}
+.header .info table tr:nth-child(3) {
+  height: 100px;
+  vertical-align: top;
+}
+.header .info table tr:nth-child(3) td {
+  vertical-align: top;
+}
+.header .info table td {
+  vertical-align: middle;
+}
+.header .info table td.handle {
+  font-size: 19px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.header .info table td.btns {
+  font-size: 14px;
+  font-weight: 600;
+}
+.header .info table td.btns span {
+  background: #363636;
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+.header .info table td.btns span + span {
+  margin-left: 10px;
+}
+.header .info table .stats span + span {
+  margin-left: 30px;
+}
+.header .info table td.name {
+  font-size: 15px;
+}
+.header .info .edit img {
+  width: 103px;
+}
+.header .info .archive img {
+  width: 115px;
+}
+.header .info .cog {
+  width: 22px;
+}
+.header .stories {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 125px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header .stories .story-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 26px 0;
+  align-self: center;
+  text-align: center;
+}
+.header .stories .story-item label {
+  line-height: 1em;
+  color: white;
+  padding-top: 12px;
+  font-size: 12px;
+}
+.header .stories .story-item img.story {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.header .tabs {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 30px;
+  margin: 20px 0 20px 0;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 62px;
+}

@@ -1,0 +1,124 @@
+$color_1: white;
+$font-family_1: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+.header {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: auto;
+  margin-top: 30px;
+  .profile {
+    height: 200px;
+  }
+  .info {
+    table {
+      height: 100%;
+      width: 430px;
+      line-height: 1.3rem;
+      tr {
+        &:nth-child(1) {
+          height: 30px;
+        }
+        &:nth-child(2) {
+          height: 60px;
+        }
+        &:nth-child(3) {
+          height: 100px;
+          vertical-align: top;
+          td {
+            vertical-align: top;
+          }
+        }
+      }
+      td {
+        vertical-align: middle;
+      }
+      td.handle {
+        font-size: 19px;
+        font-weight: 500;
+        padding-right: 20px;
+      }
+      td.btns {
+        font-size: 14px;
+        font-weight: 600;
+        span {
+          background: #363636;
+          padding: 6px 10px;
+          border-radius: 7px;
+          + {
+            span {
+              // background: red;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .stats {
+        span {
+          + {
+            span {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+      td.name {
+        font-size: 15px;
+      }
+    }
+    .edit {
+      img {
+        width: 103px;
+      }
+    }
+    .archive {
+      img {
+        width: 115px;
+      }
+    }
+    .cog {
+      width: 22px;
+    }
+  }
+  .stories {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 125px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    .story-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0 26px 0;
+      align-self: center;
+      text-align: center;
+      label {
+        line-height: 1em;
+        color: $color_1;
+        padding-top: 12px;
+        font-size: 12px;
+      }
+      img.story {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .tabs {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 30px;
+    margin: 20px 0 20px 0;
+  }
+}
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 62px;
+}
