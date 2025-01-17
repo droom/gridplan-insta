@@ -1623,14 +1623,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/src\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/index.html",
-      "oF" : 0
-    },
     "\/src\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -1654,6 +1646,32 @@
       "oA" : 1,
       "oAP" : "\/src\/partials\/_header.html",
       "oF" : 0
+    },
+    "\/src\/ref\/margins.ltd-1.png" : {
+      "ft" : 32768,
+      "iS" : 2921379,
+      "oA" : 0,
+      "oAP" : "\/src\/ref\/margins.ltd-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/src\/ref\/margins.ltd-2.png" : {
+      "ft" : 32768,
+      "iS" : 3970982,
+      "oA" : 0,
+      "oAP" : "\/src\/ref\/margins.ltd-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/src\/scss\/base.scss" : {
       "aP" : 0,
